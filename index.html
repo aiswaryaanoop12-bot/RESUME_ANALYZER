@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="themeBtn" onclick="toggleTheme()">
+        🌙 Theme
+    </button>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>📄 AI Resume Analyzer</h1>
+
+            <p class="subtitle">
+                Upload your resume and get ATS insights, skill analysis,
+                resume feedback and AI-powered improvement suggestions.
+            </p>
+
+            <div class="about-section">
+
+                <h2>About This Project</h2>
+
+                <p>
+                    AI Resume Analyzer helps job seekers evaluate their resumes
+                    using Artificial Intelligence. Upload a PDF resume and
+                    receive an ATS score, resume summary, strengths,
+                    weaknesses, missing skills and personalized suggestions
+                    to improve your resume.
+                </p>
+
+            </div>
+
+            <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf">
+
+            <button onclick="analyzeResume()">
+                Analyze Resume
+            </button>
+
+            <div id="loader" class="loader">
+                🤖 Analyzing Resume...
+            </div>
+
+            <div id="results"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <h3>🚀 AI Resume Analyzer</h3>
+
+        <p>
+            Get instant ATS feedback, skill analysis and
+            AI-powered resume improvement suggestions.
+        </p>
+
+        <small>
+            Powered by FastAPI • Groq AI • JavaScript
+        </small>
+
+        <br><br>
+
+        <small>
+            © 2026 Aiswarya Anoop
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
